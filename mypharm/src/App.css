@@ -1,0 +1,57 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(215, 230, 213);
+}
+
+a{
+  text-decoration: none;
+}
+.container {
+  text-align: center;
+  max-width: 1300px;
+  margin: 0 auto
+
+}
+
+.max-w {
+  max-width: 1300px;
+}
+
+
+
+button {
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+input {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.grid {
+  display: flex;
+}
+
+.grid-2 .grid-sec {
+  width: 50%;
+}
+
+.grid-3 .grid-sec {
+  width: 30%;
+}
+
+.grid-4 .grid-sec {
+  width: 22%;
+}
+
+.grid-5 .grid-sec {
+  width: 20%;
+}

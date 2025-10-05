@@ -1,0 +1,431 @@
+.pro {
+  font-weight: bold;
+  background: linear-gradient(131deg, #1ff053, #3636c3c9, #5c5b5b00);
+  background-clip: text;
+  color: transparent;
+}
+
+Main Container .container.nav .max-w {
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* Grid System */
+.grid {
+  display: grid;
+}
+
+.grid-2 {
+  grid-template-columns: 1fr 1fr;
+  /* Logo left, icons right */
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Each grid section */
+.grid-sec {
+  display: flex;
+  align-items: center;
+}
+
+/* Left side logo */
+.gs-logo .logo {
+  height: 45px;
+  cursor: pointer;
+  width: 150px;
+
+}
+
+/* Right side group */
+.gs-g {
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+/* Offer & Cart Icons */
+.offer,
+.atc {
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.offer:hover,
+.atc:hover {
+  transform: scale(1.1);
+}
+
+/* Login Section */
+.login {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.login h5 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.login img {
+  height: 28px;
+}
+
+
+
+
+/* ------------------ BOTTOM NAV (Menu) ------------------ */
+.nav-1 .max-w {
+  background: #27491c;
+  border-bottom: 1px solid #e5e5e5;
+  max-width: 1300px;
+}
+
+.container.nav-1 ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 12px 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.container.nav-1 ul a {
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.87);
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.container.nav-1 ul a:hover {
+  color: #007bff;
+}
+
+/* ------------------ BOTTOM NAV (Search Bar) ------------------ */
+.container.nav-2 {
+  width: 100%;
+
+  padding: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+
+
+}
+
+.nav-2 .max-w {
+  max-width: 1200px;
+  background: #d8ffd3;
+  height: 100%;
+  background-image: url(https://images.apollo247.in/images/ui_revamp_searchBanner1.svg), url(https://images.apollo247.in/images/ui_revamp_searchBanner2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0px auto;
+  background-position: 0 100%, 100% 100%;
+}
+
+.container.nav-2 h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.container.nav-2 input {
+  width: 60%;
+  max-width: 600px;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.container.nav-2 input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* ------------------ NAV-3 (Feature Strip) ------------------ */
+.container.nav-3 {
+  width: 100%;
+  background: #fdfdfd;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.nav-3 .max-w {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  /* 5 equal columns */
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Each feature item */
+.nav-3 .grid {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-3 .grid:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Icon */
+.nav-3 img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+/* Text */
+.nav-3 h5 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.nav-3 p {
+  margin: 2px 0 0;
+  font-size: 13px;
+  color: #666;
+}
+
+/* carousel */
+.slider-wrapper {
+  position: relative;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.slider-container {
+  overflow-x: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 180px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.arrow.left {
+  left: -20px;
+}
+
+.arrow.right {
+  right: -20px;
+}
+
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+
+  /* Main Container */
+  .container.nav .max-w {
+    padding: 8px 10px;
+  }
+
+  /* Grid Layout Changes */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+  }
+
+  .gs-logo .logo {
+    width: 120px;
+    height: auto;
+  }
+
+  /* Right side group icons */
+  .gs-g {
+    gap: 12px;
+  }
+
+  /* Login section adjustments */
+  .login {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  /* Bottom Nav (Menu) */
+  .container.nav-1 ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .container.nav-1 ul a {
+    font-size: 14px;
+  }
+
+  /* Search Bar */
+  .container.nav-2 input {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  /* Feature Strip (Nav-3) */
+  .nav-3 .max-w {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  /* Carousel Cards */
+  .card {
+    width: 220px;
+    height: 140px;
+  }
+
+  .arrow.left {
+    left: 5px;
+  }
+
+  .arrow.right {
+    right: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  /* Extra Small Screens */
+  .nav-3 .max-w {
+    grid-template-columns: 1fr;
+    /* 1 column */
+  }
+
+  .login h5 {
+    font-size: 13px;
+  }
+
+  .container.nav-2 h1 {
+    font-size: 18px;
+  }
+
+  .container.nav-1 ul a {
+    font-size: 13px;
+  }
+
+  .card {
+    width: 180px;
+    height: 120px;
+  }
+}
+
+/* Responsive Styles for NAV-3 */
+@media (max-width: 1024px) {
+  .nav-3 .max-w {
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns for tablets */
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-3 .max-w {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns for mobile */
+    gap: 12px;
+  }
+
+  .nav-3 .grid {
+    padding: 8px 10px;
+  }
+
+  .nav-3 img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .nav-3 h5 {
+    font-size: 14px;
+  }
+
+  .nav-3 p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-3 .max-w {
+    grid-template-columns: 1fr;
+    /* Single column on very small screens */
+    gap: 10px;
+  }
+
+  .nav-3 img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .nav-3 h5 {
+    font-size: 13px;
+  }
+
+  .nav-3 p {
+    font-size: 11px;
+  }
+}

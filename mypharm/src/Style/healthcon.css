@@ -1,0 +1,106 @@
+/* HealthConditions.css */
+.health-section {
+  padding: 20px;
+}
+
+.health-scroll {
+  display: flex;
+  gap: 20px;
+  /* overflow-x: auto;    Enables horizontal scroll */
+  padding: 10px 0;
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+.health-section h2{
+    text-align: start;
+    color: red;
+}
+
+.health-card {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+  min-width: 150px;   /* Card width */
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 15px;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;    /* Prevent shrinking */
+  transition: transform 0.3s;
+}
+
+.health-card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.health-card p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.health-card:hover {
+  transform: translateY(-5px); /* Lift on hover */
+}
+
+
+
+/* Responsive Styles for HealthConditions */
+@media (max-width: 768px) {
+  .health-section {
+    padding: 15px;
+  }
+
+  .health-section h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .health-scroll {
+    gap: 15px;
+    overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+    flex-wrap: nowrap; 
+  }
+
+  .health-card {
+    min-width: 120px; 
+    padding: 10px;
+  }
+
+  .health-card img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .health-card p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .health-section {
+    padding: 10px;
+  }
+
+  .health-section h2 {
+    font-size: 16px;
+  }
+
+  .health-card {
+    min-width: 100px;
+    padding: 8px;
+  }
+
+  .health-card img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .health-card p {
+    font-size: 12px;
+  }
+}
